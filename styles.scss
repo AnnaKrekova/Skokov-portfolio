@@ -118,13 +118,41 @@ footer span.navbar-brand {
     font-size: 14px;
 }
 .social {
-    display: inline;
-    // list-style-type: none;
+    list-style-type: none;
 }
 .social-items a {
     border: 1px solid $footer-color;
     padding: 5px;
     background-color: $footer-color;
     color: #fff;
-    // display: inline-block;
 }
+// PHOTO STEAM
+.photo-steam {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.social-items {
+    padding: 0;
+}
+.social-items a {
+    margin: 2px;
+    text-decoration: none;
+    display: block;
+}
+// @media (max-width: 1200px) {
+//     .img-fluid {
+//       column-count: 3; } }
+// @media (max-width: 992px) {
+//     .img-fluid {
+//       column-count: 3; } }
+// @media (max-width: 768px) {
+//     .img-fluid {
+//       column-count: 2; } }
+// @media (max-width: 576px) {
+//     .img-fluid {
+//       column-count: 1; } }
+// @media (max-width: 425px) {
+//     .img-fluid {
+//       column-count: 1; } }
+  
