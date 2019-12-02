@@ -140,6 +140,11 @@ footer span.navbar-brand {
     text-decoration: none;
     display: block;
 }
+.btn {
+    color: $border;
+    background-color: $footer-color;
+    border-bottom: 2px solid $hover-color;
+}
 // @media (max-width: 1200px) {
 //     .img-fluid {
 //       column-count: 3; } }

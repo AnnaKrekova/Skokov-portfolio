@@ -153,3 +153,9 @@ footer span.navbar-brand {
   text-decoration: none;
   display: block;
 }
+
+.btn {
+  color: #ffffff;
+  background-color: #000000;
+  border-bottom: 2px solid #ffea00;
+}
