@@ -76,15 +76,30 @@ h3.text-uppercase {
     transition: .5s;
 }
 // GALLERY
-.container-fluid-gallery.img-fluid {
-    position: relative;
+.container-fluid-gallery li {
+    list-style-type: none;
+    margin-top: 15px;
 }
-.container-fluid-gallery a:hover::after {
-    content: '';
+.gallery-item-cover {
+    // content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 15px;
     position: absolute;
     display: block;
     background-color: $hover-color;
-    transition: .5s;
+    transition: .5s linear;
+    opacity: 0;
+    &:hover {
+        opacity: .7;
+    }
+}
+.arrow a {
+    padding: 15px 10px;
+    color: $border;
+    background-color: $text-color;
 }
 // FOOTER
 section.container-fluid {
@@ -122,9 +137,9 @@ footer span.navbar-brand {
 }
 .social-items a {
     border: 1px solid $footer-color;
-    padding: 5px;
+    padding: 4px;
     background-color: $footer-color;
-    color: #fff;
+    color: $border;
 }
 // PHOTO STEAM
 .photo-steam {
@@ -140,24 +155,32 @@ footer span.navbar-brand {
     text-decoration: none;
     display: block;
 }
+// Contact info
+.icon-location, .icon-whatsapp, .icon-mail {
+    border: 1px solid $footer-color;
+    padding: 4px;
+    background-color: $footer-color;
+    color: $border;
+}
+#mce-email {
+    max-width: 230px;
+    background-color: $text-color;
+    border: none;
+    border-bottom: 2px solid $hover-color;
+    &::placeholder {
+        color: $border;
+    }
+}
+.icon-mail-1 {
+    color: $border;
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid $footer-color;
+    background-color: $footer-color;
+}
+// Learn more
 .btn {
     color: $border;
     background-color: $footer-color;
     border-bottom: 2px solid $hover-color;
 }
-// @media (max-width: 1200px) {
-//     .img-fluid {
-//       column-count: 3; } }
-// @media (max-width: 992px) {
-//     .img-fluid {
-//       column-count: 3; } }
-// @media (max-width: 768px) {
-//     .img-fluid {
-//       column-count: 2; } }
-// @media (max-width: 576px) {
-//     .img-fluid {
-//       column-count: 1; } }
-// @media (max-width: 425px) {
-//     .img-fluid {
-//       column-count: 1; } }
-  
