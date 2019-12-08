@@ -126,14 +126,14 @@ footer li a.nav {
   padding: 0;
 }
 
-#my-nav a {
+#my-nav-footer a {
   font-family: 'Code Light';
   font-size: 16px;
   font-weight: 400;
   margin: 0 15px;
 }
 
-#my-nav a:hover {
+#my-nav-footer a:hover {
   color: #ffea00;
   transition: .5s;
 }
