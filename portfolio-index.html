@@ -83,8 +83,8 @@
                                     <!-- GALLERY -->
   <div class="container-fluid-gallery">
       <div class="container-inner">
-          <div class="row justify-content-lg-center">
-                <div class="col-lg-12 col-">
+          <div class="row justify-content-center">
+                <div class="col-12 col-">
                     <div class="row mb-4">
                         <a href="img/img1.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
                             <img src="img/img1.png" class="img-fluid">
@@ -124,9 +124,9 @@
   </div>
                                        <!-- FOOTER -->
     <section class="container-fluid">
-        <div class="container-inner">
-            <div class="align-content-sm-start">
-                <h4 class="block-about-title">About Us</h4>
+        <div class="row container-inner pt-4">
+            <div class="col-4 align-content-sm-start">
+                <h4 class="block-about-title mb-4">About Us</h4>
                 <p class="block-about-text">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                     sed diam nonummy nibh euismod tincidunt ut 
@@ -135,11 +135,32 @@
                     suscipit lobortis nisl ut aliquip ex ea commodo consequat.
                 </p>
                 <button class="btn">Learn more</button>
-                <h4 class="block-about-title">Photo Stream</h4>
+                <!-- PHOTO STEAM -->
+                <h4 class="block-about-title mb-4 mt-4">Photo Stream</h4>
+                <ul class="photo-steam row d-flex justify-content-sm-around">
+                    <li>
+                        <img src="img/img-footer1.png" class="mb-1" alt="Photo1">
+                    </li>
+                    <li>
+                        <img src="img/img-footer2.png" alt="Photo2">
+                    </li>
+                    <li>
+                        <img src="img/img-footer3.png" alt="Photo3">
+                    </li>
+                    <li>
+                        <img src="img/img-footer4.png" alt="Photo4">
+                    </li>
+                    <li>
+                        <img src="img/img-footer5.png" alt="Photo5">
+                    </li>
+                    <li>
+                        <img src="img/img-footer6.png" alt="Photo6">
+                    </li>
+                </ul>
 
             </div>
-            <div class="align-content-sm-start">
-                <h4 class="block-title">Latest tweets</h4>
+            <div class="col-5 align-content-sm-start">
+                <h4 class="block-title mb-4">Latest tweets</h4>
                 <ul class="list-unstyled">
                     <li class="media">
                         <a class="mr-3 align-self-center">
@@ -166,7 +187,7 @@
                         <span class="date" style="color: #ffea00;">3 days ago</span>
                         </div>
                     </li>
-                    <li class="media">
+                    <li class="media my-4">
                         <a class="mr-3 align-self-center">
                             <i class="fab fa-twitter"></i>
                         </a>
@@ -178,7 +199,7 @@
                         <span class="date" style="color: #ffea00;">5 days ago</span>
                         </div>
                     </li>
-                    <li class="media">
+                    <li class="media my-4">
                         <a class="mr-3 align-self-center">
                             <i class="fab fa-twitter"></i>
                         </a>
@@ -190,7 +211,7 @@
                         <span class="date" style="color: #ffea00;">6 days ago</span>
                         </div>
                     </li>
-                    <li class="media mb-2">
+                    <li class="media my-4">
                         <a class="mr-3 align-self-center">
                             <i class="fab fa-twitter"></i>
                         </a>
@@ -204,44 +225,41 @@
                         </div>
                     </li>
                 </ul>
-            
-            <ul class="social unstyled d-inline">
-                <li class="social-items">
-                    <h4 class="block-title">Social Connecting</h4>
-                </li>
-                <li class="social-items">
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li class="social-items">
-                    <a class="icon-gplus"href="#"></a>
-                </li>
-                <li class="social-items">
-                    <a href="#" class="icon-twitter"></a>
-                </li>
-                <li class="social-items">
-                    <a href="#" class="icon-linkedin"></a>
-                </li>
-                <li class="social-items">
-                    <a href="#" class="icon-youtube"></a>
-                </li>
-                <li class="social-items">
-                    <a href="#" class="icon-blogger"></a>
-                </li>
-                <li class="social-items">
-                    <a href="#" class="icon-rss"></a>
-                </li>
-                <li class="social-items">
-                    <a href="#" class="icon-dribbble"></a>
-                </li>
-            </ul>
+            <div class="d-flex d-inline-block">
+                <h4 class="block-title">Social Connecting</h4>
+                <ul class="social unstyled d-flex">
+                    <li class="social-items">
+                        <a class="icon-facebook" href="https://www.facebook.com/"></a>
+                    </li>
+                    <li class="social-items">
+                        <a class="icon-gplus"href="https://plus.google.com"></a>
+                    </li>
+                    <li class="social-items">
+                        <a href="https://twitter.com/" class="icon-twitter"></a>
+                    </li>
+                    <li class="social-items">
+                        <a href="https://www.linkedin.com/" class="icon-linkedin"></a>
+                    </li>
+                    <li class="social-items">
+                        <a href="https://www.youtube.com" class="icon-youtube"></a>
+                    </li>
+                    <li class="social-items">
+                        <a href="https://www.blogger.com" class="icon-blogger"></a>
+                    </li>
+                    <li class="social-items">
+                        <a href="https://rss.app/" class="icon-rss"></a>
+                    </li>
+                    <li class="social-items">
+                        <a href="https://dribbble.com" class="icon-dribbble"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
             <!-- COLUMN 3 -->
-        <div class="align-content-sm-start">
-            <h4 class="block-title">Contact info</h4>
-
-            <h4 class="block-title">Follow Us</h4>
+        <div class="col-3 align-content-sm-start">
+            <h4 class="block-title mb-4">Contact info</h4>
+            
+            <h4 class="block-title mb-4">Follow Us</h4>
             <p>Lorem Ipsum is simply dummy text of the printing 
                     and typesetting industry.</p>
             <div class="container-frame">
@@ -299,13 +317,7 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="/js/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-    <script>
-  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-    });
-    </script>
+  <script src="js/bootstrap.min.js"></script>
+    
 </body>
 </html>

@@ -128,7 +128,7 @@ footer span.navbar-brand {
 }
 
 .social {
-  display: inline;
+  list-style-type: none;
 }
 
 .social-items a {
@@ -136,4 +136,26 @@ footer span.navbar-brand {
   padding: 5px;
   background-color: #000000;
   color: #fff;
+}
+
+.photo-steam {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-items {
+  padding: 0;
+}
+
+.social-items a {
+  margin: 2px;
+  text-decoration: none;
+  display: block;
+}
+
+.btn {
+  color: #ffffff;
+  background-color: #000000;
+  border-bottom: 2px solid #ffea00;
 }
