@@ -31,6 +31,7 @@ header li a {
 }
 header li a:hover {
     background-color: $hover-color;
+    -webkit-transition: .5s;
     transition: .5s;
 }
 // SLIDER
@@ -73,6 +74,7 @@ h3.text-uppercase {
 }
 .nav li a:hover {
     background-color: $hover-color;
+    -webkit-transition: .5s;
     transition: .5s;
 }
 // GALLERY
@@ -90,6 +92,7 @@ h3.text-uppercase {
     position: absolute;
     display: block;
     background-color: $hover-color;
+    -webkit-transition: .5s linear;
     transition: .5s linear;
     opacity: 0;
     &:hover {
@@ -126,6 +129,7 @@ footer li a.nav{
 }
 #my-nav-footer a:hover {
     color: $hover-color;
+    -webkit-transition: .5s;
     transition: .5s;
 }
 footer span.navbar-brand {
@@ -167,6 +171,15 @@ footer span.navbar-brand {
     background-color: $text-color;
     border: none;
     border-bottom: 2px solid $hover-color;
+    &::-webkit-input-placeholder {
+        color: $border;
+    }
+    &:-ms-input-placeholder {
+        color: $border;
+    }
+    &::-ms-input-placeholder {
+        color: $border;
+    }
     &::placeholder {
         color: $border;
     }
