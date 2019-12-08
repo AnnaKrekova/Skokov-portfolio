@@ -27,6 +27,7 @@ header li a {
 
 header li a:hover {
   background-color: #ffea00;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -75,6 +76,7 @@ h3.text-uppercase {
 
 .nav li a:hover {
   background-color: #ffea00;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -92,6 +94,7 @@ h3.text-uppercase {
   position: absolute;
   display: block;
   background-color: #ffea00;
+  -webkit-transition: .5s linear;
   transition: .5s linear;
   opacity: 0;
 }
@@ -135,6 +138,7 @@ footer li a.nav {
 
 #my-nav-footer a:hover {
   color: #ffea00;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -182,6 +186,18 @@ footer span.navbar-brand {
   background-color: #424147;
   border: none;
   border-bottom: 2px solid #ffea00;
+}
+
+#mce-email::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+#mce-email:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+#mce-email::-ms-input-placeholder {
+  color: #ffffff;
 }
 
 #mce-email::placeholder {
