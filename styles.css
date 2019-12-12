@@ -1,5 +1,5 @@
-@import url(/reset.css);
-@import url(/fonts-code-gothic.css);
+@import url(/css/reset.css);
+@import url(/css/fonts-code-gothic.css);
 @import url(css/animation.css);
 @import url(css/fontello-codes.css);
 @import url(css/fontello-embedded.css);
@@ -10,6 +10,7 @@ body {
   background-color: #f6f6f6;
   border: 15px solid #ffffff;
   margin: 0 auto;
+  font-family: 'Century Gothic', 'Code Light';
 }
 
 header {
