@@ -37,13 +37,13 @@ header li a:hover {
   margin: 0;
 }
 
-.slide {
+.container-fluid .slide {
   position: relative;
   width: 100%;
   padding: 0;
 }
 
-.header-inner-title {
+.container-fluid .header-inner-title {
   position: absolute;
   top: 210px;
   left: 140px;
@@ -52,7 +52,7 @@ header li a:hover {
   color: #ffea00;
 }
 
-.header-inner-title h5 {
+.container-fluid .header-inner-title h5 {
   margin: 0;
 }
 
@@ -86,7 +86,7 @@ h3.text-uppercase {
   margin-top: 15px;
 }
 
-.gallery-item-cover {
+.container-fluid-gallery li .gallery-item-cover {
   top: 0;
   right: 0;
   bottom: 0;
@@ -100,11 +100,11 @@ h3.text-uppercase {
   opacity: 0;
 }
 
-.gallery-item-cover:hover {
+.container-fluid-gallery li .gallery-item-cover:hover {
   opacity: .7;
 }
 
-.arrow a {
+.container-fluid-gallery li .gallery-item-cover:hover .arrow a {
   padding: 15px 10px;
   color: #ffffff;
   background-color: #424147;
@@ -114,65 +114,35 @@ section.container-fluid {
   background-color: #424147;
 }
 
-.fab fa-twitter {
-  width: 20px;
-  height: 20px;
-}
-
-.container-inner {
+section.container-fluid .container-inner {
   max-width: 1395px;
   margin: 0 auto;
   color: #ffffff;
   font-size: 13px;
 }
 
-footer li a.nav {
-  padding: 0;
-}
-
-#my-nav-footer a {
-  font-family: 'Code Light';
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0 15px;
-}
-
-#my-nav-footer a:hover {
-  color: #ffea00;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-footer span.navbar-brand {
-  font-family: 'Century Gothic';
-  font-size: 14px;
-}
-
 .social {
   list-style-type: none;
 }
 
-.social-items a {
+.social .social-items {
+  padding: 0;
+}
+
+.social .social-items a {
   border: 1px solid #000000;
   padding: 4px;
   background-color: #000000;
   color: #ffffff;
+  margin: 2px;
+  text-decoration: none;
+  display: block;
 }
 
 .photo-steam {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.social-items {
-  padding: 0;
-}
-
-.social-items a {
-  margin: 2px;
-  text-decoration: none;
-  display: block;
 }
 
 .icon-location, .icon-whatsapp, .icon-mail {
@@ -217,4 +187,25 @@ footer span.navbar-brand {
   color: #ffffff;
   background-color: #000000;
   border-bottom: 2px solid #ffea00;
+}
+
+footer li a.nav {
+  padding: 0;
+}
+
+#my-nav-footer a {
+  font-family: 'Code Light';
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 15px;
+}
+
+#my-nav-footer a:hover {
+  color: #ffea00;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+footer span.navbar-brand {
+  font-size: 14px;
 }

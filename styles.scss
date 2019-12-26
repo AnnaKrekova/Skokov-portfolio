@@ -22,40 +22,46 @@ body {
 // HEADER
 header {
     margin-bottom: 20px;
+    li {
+        text-align: center;
+        a {
+            color: $text-color;
+            margin: 10px 40px;
+            &:hover {
+                background-color: $hover-color;
+                -webkit-transition: .5s;
+                transition: .5s;
+            }
+        }
+    }
 }
-header li {
-    text-align: center;
-}
-header li a {
-    color: $text-color;
-    margin: 10px 40px;
-}
-header li a:hover {
-    background-color: $hover-color;
-    -webkit-transition: .5s;
-    transition: .5s;
-}
+
+
+
 // SLIDER
 .container-fluid {
     padding: 0;
     margin: 0;
+    .slide {
+        position: relative;
+        width: 100%;
+        padding: 0;
+    }
+    .header-inner-title {
+        position: absolute;
+        top: 210px;
+        left: 140px;
+        padding: 10px 80px 10px 10px;
+        background-color: $text-color;
+        color: $hover-color;
+        h5 {
+            margin: 0;
+        }
+    }
 }
-.slide {
-    position: relative;
-    width: 100%;
-    padding: 0;
-}
-.header-inner-title {
-    position: absolute;
-    top: 210px;
-    left: 140px;
-    padding: 10px 80px 10px 10px;
-    background-color: $text-color;
-    color: $hover-color;
-}
-.header-inner-title h5 {
-    margin: 0;
-}
+
+
+
 // TITLE
 h3.text-uppercase {
     font-size: 35px;
@@ -68,98 +74,82 @@ h3.text-uppercase {
 // SECONDARY MENU
 .nav {
     padding-bottom: 50px;
+    li a {
+        color: $text-color;
+        font-size: 24px;
+        &:hover {
+            background-color: $hover-color;
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+    }
 }
-.nav li a {
-    color: $text-color;
-    font-size: 24px;
-}
-.nav li a:hover {
-    background-color: $hover-color;
-    -webkit-transition: .5s;
-    transition: .5s;
-}
+
+
 // GALLERY
 .container-fluid-gallery li {
     list-style-type: none;
     margin-top: 15px;
-}
-.gallery-item-cover {
-    // content: '';
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 0 15px;
-    position: absolute;
-    display: block;
-    background-color: $hover-color;
-    -webkit-transition: .5s linear;
-    transition: .5s linear;
-    opacity: 0;
-    &:hover {
-        opacity: .7;
+    .gallery-item-cover {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0 15px;
+        position: absolute;
+        display: block;
+        background-color: $hover-color;
+        -webkit-transition: .5s linear;
+        transition: .5s linear;
+        opacity: 0;
+        &:hover {
+            opacity: .7;
+            .arrow a {
+                padding: 15px 10px;
+                color: $border;
+                background-color: $text-color;
+            }
+        }
     }
 }
-.arrow a {
-    padding: 15px 10px;
-    color: $border;
-    background-color: $text-color;
-}
+
+
 // FOOTER
 section.container-fluid {
     background-color: $text-color;
+    .container-inner {
+        max-width: 1395px;
+        margin: 0 auto;
+        color: $border;
+        font-size: 13px;
+    }
 }
-.fab fa-twitter {
-    width: 20px;
-    height: 20px;
-}
-.container-inner {
-    max-width: 1395px;
-    margin: 0 auto;
-    color: $border;
-    font-size: 13px;
-}
-footer li a.nav{
-    padding: 0;
-}
-#my-nav-footer a {
-    font-family: 'Code Light';
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0 15px;
-}
-#my-nav-footer a:hover {
-    color: $hover-color;
-    -webkit-transition: .5s;
-    transition: .5s;
-}
-footer span.navbar-brand {
-    font-family: 'Century Gothic';
-    font-size: 14px;
-}
+
+// Social Connecting
 .social {
     list-style-type: none;
+    .social-items {
+        padding: 0;
+        a {
+            border: 1px solid $footer-color;
+            padding: 4px;
+            background-color: $footer-color;
+            color: $border;
+            margin: 2px;
+            text-decoration: none;
+            display: block;
+        }
+    }
 }
-.social-items a {
-    border: 1px solid $footer-color;
-    padding: 4px;
-    background-color: $footer-color;
-    color: $border;
-}
+
 // PHOTO STEAM
 .photo-steam {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-.social-items {
-    padding: 0;
-}
-.social-items a {
-    margin: 2px;
-    text-decoration: none;
-    display: block;
-}
+
+
 // Contact info
 .icon-location, .icon-whatsapp, .icon-mail {
     border: 1px solid $footer-color;
@@ -197,4 +187,25 @@ footer span.navbar-brand {
     color: $border;
     background-color: $footer-color;
     border-bottom: 2px solid $hover-color;
+}
+
+// FOOTER FOOTER
+
+footer li a.nav{
+    padding: 0;
+}
+#my-nav-footer a {
+    font-family: 'Code Light';
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 15px;
+    &:hover {
+        color: $hover-color;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+}
+
+footer span.navbar-brand {
+    font-size: 14px;
 }
